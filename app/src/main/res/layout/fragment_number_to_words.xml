@@ -52,19 +52,20 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_margin="20dp"
-        android:drawableLeft="@drawable/ic_speaker"
-        android:enabled="false"
         android:text="SPeak"
-        android:textColor="@android:color/black" />
+        android:enabled="false"
+        android:textColor="@android:color/black"
+        android:drawableLeft="@drawable/ic_volume"
+        android:drawableTint="@android:color/black"/>
 
     <Button
         android:id="@+id/button_convert"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="20dp"
-        android:background="@color/colorPrimary"
         android:text="Convert"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
 
 
 </LinearLayout>
