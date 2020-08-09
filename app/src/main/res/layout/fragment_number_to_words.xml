@@ -32,7 +32,7 @@
         android:layout_margin="20dp"
         android:background="#dbdbdb"
         android:hint="Number in Words"
-        android:padding="10dp"
+        android:padding="5dp"
         app:boxCornerRadiusBottomEnd="@dimen/cardview_default_radius"
         app:boxCornerRadiusBottomStart="@dimen/cardview_default_radius"
         app:boxCornerRadiusTopEnd="@dimen/cardview_default_radius"
@@ -41,21 +41,30 @@
         <TextView
             android:id="@+id/converted_words"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="200dp"
             android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
             android:textSize="30dp" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/button_speak"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:drawableLeft="@drawable/ic_speaker"
+        android:enabled="false"
+        android:text="SPeak"
+        android:textColor="@android:color/black" />
 
     <Button
         android:id="@+id/button_convert"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
         android:text="Convert"
-        android:textColor="@android:color/white"
-        android:background="@color/colorPrimary"/>
+        android:textColor="@android:color/white" />
 
 
 </LinearLayout>
