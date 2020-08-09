@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
 
-
-    <EditText
-        android:id="@+id/enter_number"
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="20dp"
-        android:hint="Enter Number To Convert"
-        android:inputType="numberDecimal"
-        android:textSize="20dp"/>
+        android:hint="Enter Number To Convert">
 
-    <TextView
-        android:id="@+id/converted_words"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/enter_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:textSize="20dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/enter_number"
         android:layout_margin="20dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
-        android:textSize="30dp"
-        android:layout_above="@id/button_convert"/>
+        android:background="#dbdbdb"
+        android:hint="Number in Words"
+        android:padding="10dp"
+        app:boxCornerRadiusBottomEnd="@dimen/cardview_default_radius"
+        app:boxCornerRadiusBottomStart="@dimen/cardview_default_radius"
+        app:boxCornerRadiusTopEnd="@dimen/cardview_default_radius"
+        app:boxCornerRadiusTopStart="@dimen/cardview_default_radius">
+
+        <TextView
+            android:id="@+id/converted_words"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.PopupMenu.Large"
+            android:textSize="30dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
 
     <Button
         android:id="@+id/button_convert"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"
         android:layout_margin="20dp"
-        android:text="Convert" />
+        android:text="Convert"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"/>
 
 
-</RelativeLayout>
+</LinearLayout>
