@@ -1,12 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Select Money"
+        android:textSize="32dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="Select Money"
+        android:textSize="32dp"
+
+        />
+
+    <EditText
+        android:id="@+id/InputEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:ems="20"
+        android:hint="Input"
+        android:inputType="number"
+        android:textSize="32dp" />
+
+    <requestFocus />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/OutputTextView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Currency Converter"
-        android:layout_centerInParent="true"/>
+        android:layout_weight="1"
+        android:hint="Output"
+        android:text=""
+        android:textSize="32dp" />
 
-</RelativeLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"
+
+        />
+
+</LinearLayout>

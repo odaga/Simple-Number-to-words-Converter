@@ -6,14 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="20dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/exchange"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/app_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/animationView"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="26dp"
+        android:text="Number to Words Converter \n and \n Currency Converter"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
     <Button
+        android:id="@+id/get_started"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Get started"
-        android:id="@+id/get_started"
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        android:text="Get started"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
