@@ -50,7 +50,10 @@
         android:id="@+id/btnSubmit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Convert"
+        android:layout_margin="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
 
         />
 
